@@ -41,48 +41,48 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onChange }) => {
     e.stopPropagation();
     try {
       if (!file) {
-        throw new Error("Please select a file first");
+        throw new Error('Please select a file first');
       }
-
+    
       setUploadStatus("uploading");
       setError("");
-
+    
       const timestamp = new Date().getTime();
       const randomString = Math.random().toString(36).substring(7);
-      const fileExt = file.name.split(".").pop();
+      const fileExt = file.name.split('.').pop();
       const fileName = `${timestamp}-${randomString}.${fileExt}`;
       const filePath = `public/${fileName}`;
-
-      // Attempting to upload the file
-      const { data , error: uploadError } = await supabase.storage
-        .from("files") // Check that this matches your Supabase bucket name
+    
+      // Upload the file
+      const { error: uploadError } = await supabase.storage
+        .from('files')
         .upload(filePath, file, {
-          cacheControl: "3600",
+          cacheControl: '3600',
           upsert: false,
-          contentType: file.type,
+          contentType: file.type
         });
-
+    
       if (uploadError) {
-        console.error("Upload Error:", uploadError.message);
-        throw new Error("Failed to upload file to Supabase storage.");
+        throw uploadError;
       }
-
+    
       // Get the public URL
-      const { data: urlData, error: urlError } = supabase.storage
+      const { data: urlData } = supabase.storage
         .from("files")
         .getPublicUrl(filePath);
-
-      if (urlError) {
-        console.error("Public URL Error:", urlError.message);
-        throw new Error("Failed to retrieve public URL for the uploaded file.");
+    
+      // Check if urlData exists and set the download URL
+      if (urlData) {
+        setDownloadUrl(urlData.publicUrl);
+      } else {
+        setError('Failed to get public URL');
       }
-
-      setDownloadUrl(urlData.publicUrl);
+    
       setUploadStatus("complete");
-
+    
     } catch (err) {
-      console.error("Upload error:", err);
-      setError(err instanceof Error ? err.message : "Error uploading file");
+      console.error('Upload error:', err);
+      setError(err instanceof Error ? err.message : 'Error uploading file');
       setUploadStatus("error");
     }
   };
