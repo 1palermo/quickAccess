@@ -54,7 +54,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onChange }) => {
       const filePath = `public/${fileName}`;
 
       // Attempting to upload the file
-      const { error: uploadError } = await supabase.storage
+      const { data , error: uploadError } = await supabase.storage
         .from("files") // Check that this matches your Supabase bucket name
         .upload(filePath, file, {
           cacheControl: "3600",
