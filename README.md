@@ -4,7 +4,7 @@
       <img src="https://github.com/user-attachments/assets/471e2baa-8781-43b8-aaed-62e313d03e99" alt="Project Banner">
     </a>
      <img src="https://github.com/1palermo/quickAccess/blob/main/public/img1.png" alt="architect">
-     <img src="https://github.com/1palermo/quickAccess/blob/main/public/img2.png" alt="architect">
+     <img src="https://github.com/1palermo/quickAccess/blob/main/public/img2.jpg" alt="architect">
   <br />
 
   <div>
