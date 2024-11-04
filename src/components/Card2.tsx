@@ -26,7 +26,7 @@ export default function Component() {
   ]
 
   return (
-    <div className="bg-black flex items-center justify-center p-4 my-32">
+    <div className="bg-black flex items-center justify-center p-4 my-8">
       <div className="max-w-full w-full grid grid-cols-1 md:grid-cols-3 gap-6">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />

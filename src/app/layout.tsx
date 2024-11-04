@@ -30,10 +30,10 @@ export const viewport: Viewport = {
 };
 export const metadata: Metadata = {
   title: {
-    default: "FlashShare - Fast & Secure File Sharing",
-    template: "%s | FlashShare"
+    default: "QuickAccess - Fast & Secure File Sharing",
+    template: "%s | QuickAccess"
   },
-  description: "Share files instantly with FlashShare. Secure, fast, and easy-to-use file sharing platform with QR code support and instant downloads.",
+  description: "Share files instantly with QuickAccess. Secure, fast, and easy-to-use file sharing platform with QR code support and instant downloads.",
   keywords: [
     "file share online", 
     "online file sharing",
@@ -114,12 +114,12 @@ export const metadata: Metadata = {
 ],
   authors: [
     {
-      name: "Rohit Kumar",
-      url: "https://rohitk.me/",
+      name: "Aman Deep",
+      url: "https://amandeep-seven.vercel.app/",
     }
   ],
-  creator: "Rohit Kumar",
-  publisher: "FlashShare",
+  creator: "Aman Deep",
+  publisher: "QuickAccess",
   robots: {
     index: true,
     follow: true,
@@ -131,22 +131,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://flash-share.vercel.app/",
-    title: "FlashShare - Fast & Secure File Sharing",
-    description: "Share files instantly with FlashShare. Secure, fast, and easy-to-use file sharing platform with QR code support.",
-    siteName: "FlashShare",
+    url: "https://quick-access.vercel.app/",
+    title: "QuickAccess - Fast & Secure File Sharing",
+    description: "Share files instantly with QuickAccess. Secure, fast, and easy-to-use file sharing platform with QR code support.",
+    siteName: "QuickAccess",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FlashShare Preview",
+        alt: "QuickAccess Preview",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FlashShare - Fast & Secure File Sharing",
+    title: "QuickAccess - Fast & Secure File Sharing",
     description: "Instantly share files with secure, fast, and easy-to-use platform featuring QR code support.",
     images: ["/og-image.png"],
     creator: "@gutsy_coder",
@@ -169,11 +169,11 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-site-verification-code",
   },
-  applicationName: "FlashShare",
+  applicationName: "QuickAccess",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "FlashShare",
+    title: "QuickAccess",
   },
 };
 
@@ -187,7 +187,7 @@ export default function RootLayout({
       <head>
         {/* Additional meta tags */}
         <meta name="language" content="English" />
-        <meta name="author" content="Rohit Kumar" />
+        <meta name="author" content="Aman Deep" />
         <meta name="rating" content="General" />
         {/* Add more additional meta tags here */}
       </head>

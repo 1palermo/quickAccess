@@ -15,9 +15,9 @@ export default function Home() {
 
       <header className="mt-2 mx-4 relative py-6 px-4 sm:px-6 lg:px-8 flex justify-between bg-secondary/15 shadow-lg shadow-neutral-600/5 backdrop-blur-2xl border border-green-400/20 p-6 rounded-2xl">
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-600 to-green-700 animate-pulse inline-block">
-          Flash
+          Quick
           <span className="bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600">
-            Share
+            Access
           </span>
         </h1>
 
@@ -65,13 +65,13 @@ export default function Home() {
       </main>
 
       {/* Cards Section */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 ">
         <Cards />
       </div>
 
       {/* Fixed button in the bottom right corner */}
-      <div className="fixed bottom-4 right-4">
-        <Link href="https://github.com/Rohitk131">
+      <div className="fixed bottom-4 right-32">
+        <Link href="https://github.com/1palermo">
           <AnimatedShinyTextDemo />
         </Link>
       </div>
