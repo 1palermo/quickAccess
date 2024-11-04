@@ -1,97 +1,53 @@
+
 <div align="center">
   <br />
-    <a href="https://youtu.be/Zq5fmkH0T78?feature=shared" target="_blank">
-      <img src="https://github.com/user-attachments/assets/471e2baa-8781-43b8-aaed-62e313d03e99" alt="Project Banner">
-    </a>
      <img src="https://github.com/1palermo/quickAccess/blob/main/public/img1.png" alt="architect">
      <img src="https://github.com/1palermo/quickAccess/blob/main/public/img2.jpg" alt="architect">
+     
   <br />
-
-  <div>
-    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=react&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Sanity-black?style=for-the-badge&logoColor=white&logo=sanity&color=F03E2F" alt="sanity" />
-
-  </div>
-
 <h3 align="center">Startup Directory Platform</h3>
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
+  
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
+2. ⚙ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
 
-## 🚨 Tutorial
+## <a name="introduction">🤖 Introduction (File Sharing Web App)</a>
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube
-channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+A simple and secure file-sharing application built with Next.js and Supabase. This web app allows users to upload files and generates unique QR codes and links for easy sharing.
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects
-like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/Zq5fmkH0T78?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-A Next.js 15 platform where entrepreneurs can submit their startup ideas for virtual pitch competitions, browse other
-pitches, and gain exposure through a clean minimalistic design for a smooth user experience.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
-members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## <a name="tech-stack">⚙ Tech Stack</a>
 
 - React 19
 - Next.js 15
-- Sanity
+- Superbase
 - TailwindCSS
-- ShadCN
 - TypeScript
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Live Content API**: Displays the latest startup ideas dynamically on the homepage using Sanity's Content API.
+👉 File Upload: Upload any file to the app with a secure backend powered by Supabase.
 
-👉 **GitHub Authentication**: Allows users to log in easily using their GitHub account.
+👉 QR Code Generation: Automatically generate a QR code for each uploaded file, making it easy to share the file via QR scanning.
 
-👉 **Pitch Submission**: Users can submit startup ideas, including title, description, category, and multimedia links (
-image or video).
+👉 File Link Generation: Generate a unique shareable link for each file, allowing others to access the file through the link.
 
-👉 **View Pitches**: Browse through submitted ideas with filtering options by category.
+👉 Secure File Storage: All files are securely stored in Supabase, ensuring that only those with the link or QR code can access them.
 
-👉 **Pitch Details Page**: Click on any pitch to view its details, with multimedia and description displayed.
+👉  Access Control: Restrict file access with optional expiration settings (planned feature).
 
-👉 **Profile Page**: Users can view the list of pitches they've submitted.
-
-👉 **Editor Picks**: Admins can highlight top startup ideas using the "Editor Picks" feature managed via Sanity Studio.
-
-👉 **Views Counter**: Tracks the number of views for each pitch instead of an upvote system.
-
-👉 **Search**: Search functionality to load and view pitches efficiently.
-
-👉 **Minimalistic Design**: Fresh and simple UI with only the essential pages for ease of use and a clean aesthetic.
-
-and many more, including the latest **React 19**, **Next.js 15** and **Sanity** features alongside code architecture and
-reusability
+👉 File Preview (Future Feature): Preview certain file types (e.g., images, PDFs) before downloading.
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
+Prerequisites
 
 Make sure you have the following installed on your machine:
 
@@ -99,112 +55,31 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+Cloning the Repository
 
-```bash
-git clone https://github.com/JavaScript-Mastery-Pro/pitchify.git
-cd pitchify
-```
+bash
+git clone https://github.com/1palermo/quickAccess.git
 
-**Installation**
+Installation
 
 Install the project dependencies using npm:
 
-```bash
+bash
 npm install
-```
 
-**Set Up Environment Variables**
+Running the Project
 
-Create a new file named `.env.local` in the root of your project and add the following content:
-
-```env
-NEXT_PUBLIC_SANITY_PROJECT_ID=
-NEXT_PUBLIC_SANITY_DATASET=
-NEXT_PUBLIC_SANITY_API_VERSION='vX'
-SANITY_TOKEN=
-
-AUTH_SECRET= 
-AUTH_GITHUB_ID=
-AUTH_GITHUB_SECRET=
-```
-
-Replace the placeholder values with your actual Sanity credentials. You can obtain these credentials by signing up &
-creating a new project on the [Sanity website](https://www.sanity.io/).
-
-**Running the Project**
-
-```bash
+bash
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Open [http://localhost:3000](http://localhost:5000) in your browser to view the project.
 
-## <a name="snippets">🕸️ Snippets</a>
 
-<details>
-<summary><code>tailwind.config.ts</code></summary>
-
-```typescript
-import type {Config} from "tailwindcss";
-
-const config: Config = {
-    darkMode: ["class"],
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./app/**/*.{js,ts,jsx,tsx,mdx}",
-        "./sanity/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-    theme: {
-        extend: {
-            screens: {
-                xs: "475px",
-            },
-            colors: {
-                primary: {
-                    "100": "#FFE8F0",
-                    DEFAULT: "#EE2B69",
-                },
-                secondary: "#FBE843",
-                black: {
-                    "100": "#333333",
-                    "200": "#141413",
-                    "300": "#7D8087",
-                    DEFAULT: "#000000",
-                },
-                white: {
-                    "100": "#F7F7F7",
-                    DEFAULT: "#FFFFFF",
-                },
-            },
-            fontFamily: {
-                "work-sans": ["var(--font-work-sans)"],
-            },
-            borderRadius: {
-                lg: "var(--radius)",
-                md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)",
-            },
-            boxShadow: {
-                100: "2px 2px 0px 0px rgb(0, 0, 0)",
-                200: "2px 2px 0px 2px rgb(0, 0, 0)",
-                300: "2px 2px 0px 2px rgb(238, 43, 105)",
-            },
-        },
-    },
-    plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-};
-
-export default config;
-```
-
-</details>
 
 <details>
-<summary><code>globals.css</code></summary>
 
-```css
+
+css
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
@@ -421,152 +296,5 @@ export default config;
     .tag-tri {
         @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
     }
-}
 
-.w-md-editor-toolbar {
-    padding: 10px !important;
-}
-```
-
-</details>
-
-<details>
-<summary><code>lib/utils.ts</code></summary>
-
-```typescript
-import {clsx, type ClassValue} from "clsx";
-import {twMerge} from "tailwind-merge";
-
-export function cn(...inputs: ClassValue[]) {
-    return twMerge(clsx(inputs));
-}
-
-export function parseServerActionResponse<T>(response: T) {
-    return JSON.parse(JSON.stringify(response));
-}
-
-export function formatDate(date: string) {
-    return new Date(date).toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-    });
-}
-
-export function formatNumber(number: number) {
-    if (number >= 1000000) {
-        return (number / 1000000).toFixed(1).replace(/\.0$/, "") + "M"; // Convert to millions
-    } else if (number >= 1000) {
-        return (number / 1000).toFixed(1).replace(/\.0$/, "") + "k"; // Convert to thousands
-    } else {
-        return number.toString(); // Return the number as is if below 1000
-    }
-}
-```
-
-</details>
-
-<details>
-<summary><code>lib/validation.ts</code></summary>
-
-```typescript
-import {z} from "zod";
-
-export const formSchema = z.object({
-    title: z.string().min(3, "Title is required").max(100, "Title is too long"),
-    description: z
-        .string()
-        .min(20, "Description should be at least 20 characters")
-        .max(500, "Description is too long. Max 500 characters at most"),
-    category: z
-        .string()
-        .min(3, "Category should be at least 3 characters")
-        .max(20, "Category is too long. Max 20 characters at most"),
-    link: z
-        .string()
-        .url("Invalid Image URL")
-        .refine(async (url) => {
-            try {
-                const res = await fetch(url, {method: "HEAD"});
-                const contentType = res.headers.get("content-type");
-                return contentType?.startsWith("image/");
-            } catch {
-                return false;
-            }
-        }, "URL must be a valid image"),
-    pitch: z.string().min(10, "Pitch should be at least 10 characters"),
-});
-```
-
-</details>
-
-<details>
-  <summary><code>components/Ping.tsx</code></summary>
-
-```typescript jsx
-const Ping = () => {
-    return (
-        <div className="relative">
-            <div className="absolute -left-4 top-1">
-                <span className="flex size-[11px]">
-                    <span
-                        className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
-                    <span className="relative inline-flex size-[11px] rounded-full bg-primary"></span>
-                </span>
-            </div>
-        </div>
-    );
-};
-
-export default Ping;
-```
-
-</details>
-
-<details>
-    <summary><code>PLAYLIST_BY_SLUG_QUERY</code></summary>
-
-```typescript
-export const PLAYLIST_BY_SLUG_QUERY =
-  defineQuery(`*[_type == "playlist" && slug.current == $slug][0]{
-  _id,
-  title,
-  slug,
-  select[]->{
-    _id,
-    _createdAt,
-    title,
-    slug,
-    author->{
-      _id,
-      name,
-      slug,
-      image,
-      bio
-    },
-    views,
-    description,
-    category,
-    image,
-    pitch
-  }
-}`);
-```
-
-</details>
-
-## <a name="links">🔗 Assets</a>
-
-- Fonts and Assets used in the project can be found [here](https://drive.google.com/file/d/1OEFHnEq5pQFP86u8FOBLBBNxKPsbjjqU/view?usp=sharing)
-- [Learn Server Actions](https://youtu.be/FKZAXFjxlJI?feature=shared)
-- [Applicaton Workflow](https://miro.com/app/board/uXjVLT_tMdU=/?share_link_id=580854757703)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
+</detail>
